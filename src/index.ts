@@ -28,7 +28,7 @@ const addTokenInResLocals = (
   res.locals.jwtToken = req.header('Authorization')?.replace('Bearer ', '');
   next();
 };
-
+// console.log()
 app.use(addTokenInResLocals);
 
 // in every end point we are checking first jwt then scopes in permission then we checking inside call back having permission to see salary or not
