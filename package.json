@@ -4,11 +4,7 @@
   "description": "Okta auth tutorial with Node.js and Typescript",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
-    "test": "jest",
-    "test:unit": "jest unit",
-    "test:int": "jest int",
-    "test:coverage": "jest --coverage"
+    "start": "nodemon src/index.ts"
   },
   "repository": {
     "type": "git",
