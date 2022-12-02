@@ -31,6 +31,11 @@ const addTokenInResLocals = (
 // console.log()
 app.use(addTokenInResLocals);
 
+app.get("/",(req: Request, res: Response)=>{
+return res.status(200).json({
+  msg:"Hello World"
+})
+})
 // in every end point we are checking first jwt then scopes in permission then we checking inside call back having permission to see salary or not
 
 app.post('/api/permissions', checkJwt, (req: Request, res: Response) => {
