@@ -4,7 +4,7 @@
   "description": "Okta auth tutorial with Node.js and Typescript",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts"
+    "start": "nodemon index.ts"
   },
   "repository": {
     "type": "git",

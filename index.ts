@@ -7,8 +7,8 @@ import express, { Express, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import jwt_decode from 'jwt-decode';
 import _ from 'lodash';
-import { checkPermission } from './lib/util';
-import { checkJwt, checkScopes } from './lib/auth.middleware';
+import { checkPermission } from './src/lib/util';
+import { checkJwt, checkScopes } from './src/lib/auth.middleware';
 
 dotenv.config({
   path: '.env',
@@ -32,6 +32,7 @@ const addTokenInResLocals = (
 app.use(addTokenInResLocals);
 
 app.get("/",(req: Request, res: Response)=>{
+  console.log("Hello worlds")
 return res.status(200).json({
   msg:"Hello World"
 })
