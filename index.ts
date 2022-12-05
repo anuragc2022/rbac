@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import dotenv from 'dotenv';
+// import * as dotenv from 'dotenv'
 import express, { Express, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import jwt_decode from 'jwt-decode';
@@ -10,7 +10,7 @@ import _ from 'lodash';
 import { checkPermission } from './src/lib/util';
 import { checkJwt, checkScopes } from './src/lib/auth.middleware';
 
-dotenv.config({
+require('dotenv').config({
   path: '.env',
 });
 
